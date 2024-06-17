@@ -26,3 +26,19 @@ function allVals(...values){
     console.log(values);
 }
 allVals(1,2,3,3,5,5,3,2,4,2);
+
+// hoisting introduction
+
+// it is okay to call this function before definition
+one();
+function one(){
+    console.log('one');
+}
+one();
+
+// it is not okay to call this function before definition because in this type we are assigning the function to a variable
+two();
+const two = function(){
+    console.log('two');
+}
+two();
