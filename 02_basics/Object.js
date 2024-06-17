@@ -163,5 +163,20 @@ const arrOfObj = [
 // console.log("Entries: " , Object.entries(myObj));
 
 // check if object contains a property or not
-console.log(myObj.hasOwnProperty("isProgrammer"));
-console.log(myObj.hasOwnProperty("height"));
+// console.log(myObj.hasOwnProperty("isProgrammer"));
+// console.log(myObj.hasOwnProperty("height"));
+
+// Object Destructuring
+const myNewObj = {
+    name: "Prince Singh Chouhan",
+    age: 21,
+    email: "prince@gmail.com",
+    isProgrammer: true
+}
+
+const {isProgrammer} = myNewObj;
+console.log(isProgrammer);
+
+// you can also set the name of the property as per your convinience
+const {name: naamKyaHai} = myNewObj;
+console.log(naamKyaHai);
